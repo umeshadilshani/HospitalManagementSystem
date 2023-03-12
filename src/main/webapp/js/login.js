@@ -1,3 +1,6 @@
+// Silva T.U.D
+
+// Function related to the login page design
 $('.loginBtn').click(function(){
 	$('.login').show();
 	$('.signUp').hide();
@@ -15,6 +18,7 @@ $('.signUpBtn').click(function(){
 });
 
 
+// Validation of the signup form
 $(document).ready(function($) {            
 	$("#signUpValidate").validate({
 		rules: {
@@ -73,8 +77,7 @@ $(document).ready(function($) {
 	});
 	
 	
-	
-	
+	// Validation of the login form
 	$("#loginValidate").validate({
 		rules: {
 			txtUsername: {
@@ -131,6 +134,6 @@ $(document).ready(function($) {
 	});
 		
 	$.validator.addMethod("checkId", function(s) {
-   		return /^[0-9]+$/.test(s) // has special characters
+   		return /^[0-9]+$/.test(s) // has digits
 	});
 });

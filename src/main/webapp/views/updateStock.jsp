@@ -1,3 +1,4 @@
+<!-- Silva T.U.D -->
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -11,7 +12,7 @@
 <style><%@include file="../css/stock.css"%></style>
 </head>
 <body>
-<!-- Navigation Bar -->
+	<!-- Navigation Bar -->
 	<nav class="navbar fixed-top navbar-expand-lg"
 		style="background-color: rgb(248, 249, 250);">
 		<div class="container-fluid"
@@ -27,9 +28,7 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mx-auto">
 					<li class="nav-item"><a class="nav-link"
-						href="pharmacistHomePage.jsp">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="updateStock.jsp">Update
-							Stock</a></li>
+						href="updateStock.jsp">Update Stock</a></li>
 				</ul>
 			</div>
 			<button type="button" class="btn btn-primary my-0"
@@ -37,7 +36,8 @@
 		</div>
 	</nav>
 	
-<div style="margin-top: 90px;" id="id1">
+	<!-- Check stock details -->
+	<div style="margin-top: 90px;" id="id1">
 			<form action="CheckMedU" method="post" style="width: 100%; text-align: center;" id="checkMed">
 				<input type="text" class="form-control" id="s_id" name="s_id" placeholder="Medicine ID" style="width: 30%;
 				margin: auto;">
@@ -47,6 +47,7 @@
 			</div>
 			</form>
 			<hr>
+			<!-- Notification related to the check of status -->
 			<%if (request.getAttribute("s_idu") == null) {
 			%>
 			<div></div>
@@ -66,6 +67,7 @@
 				<hr>
 				<p>ID found.</p>
 			</div>
+			<!-- Update stock details -->
 			<form class="row" action="UpdateMed" method="post" novalidate="novalidate" id="updateMed">
 				<div class="col-md-6">
 								Medicine ID : <input type="text"
@@ -98,6 +100,7 @@
 			<% } %>
 		</div>
 		
+		<!-- Notification related to the update status -->
 		<%if (request.getAttribute("ucount") == null) {
 			%>
 			<div></div>
@@ -119,14 +122,10 @@
 			</div>
 			<% } %>
 
-<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script
-		src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-	<script
-		src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 	<script src="../js/stock.js"></script>
 </body>
 </html>

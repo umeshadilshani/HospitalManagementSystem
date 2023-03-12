@@ -1,12 +1,20 @@
+/**
+ * @author Silva T.U.D
+ */
+
 package model;
 
+/**
+ * Store properties and methods related to the stock class
+ */
 public class Stock {
+	//Properties of the stock class
 	private int s_id;
 	private String s_sname;
 	private int s_quantity;
 	private double s_price;
 	
-	
+	//Constructors of the stock class
 	public Stock() {
 		super();
 	}
@@ -17,6 +25,8 @@ public class Stock {
 		this.s_quantity = s_quantity;
 		this.s_price = s_price;
 	}
+	
+	//Getters and setters of the stock class
 	public int getS_id() {
 		return s_id;
 	}

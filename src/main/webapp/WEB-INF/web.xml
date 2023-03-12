@@ -66,6 +66,16 @@
   </servlet-mapping>
   <servlet>
     <description></description>
+    <display-name>CheckEmpD</display-name>
+    <servlet-name>CheckEmpD</servlet-name>
+    <servlet-class>servlet.CheckEmpD</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckEmpD</servlet-name>
+    <url-pattern>/views/CheckEmpD</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
     <display-name>UpdateEmp</display-name>
     <servlet-name>UpdateEmp</servlet-name>
     <servlet-class>servlet.UpdateEmp</servlet-class>
@@ -106,6 +116,16 @@
   </servlet-mapping>
   <servlet>
     <description></description>
+    <display-name>RemoveEmp</display-name>
+    <servlet-name>RemoveEmp</servlet-name>
+    <servlet-class>servlet.RemoveEmp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoveEmp</servlet-name>
+    <url-pattern>/views/RemoveEmp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
     <display-name>CheckMedU</display-name>
     <servlet-name>CheckMedU</servlet-name>
     <servlet-class>servlet.CheckMedU</servlet-class>
@@ -123,5 +143,145 @@
   <servlet-mapping>
     <servlet-name>UpdateMed</servlet-name>
     <url-pattern>/views/UpdateMed</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CheckWard</display-name>
+    <servlet-name>CheckWard</servlet-name>
+    <servlet-class>servlet.CheckWard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckWard</servlet-name>
+    <url-pattern>/views/CheckWard</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddInPatient</display-name>
+    <servlet-name>AddInPatient</servlet-name>
+    <servlet-class>servlet.AddInPatient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddInPatient</servlet-name>
+    <url-pattern>/views/AddInPatient</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CheckInPatientU</display-name>
+    <servlet-name>CheckInPatientU</servlet-name>
+    <servlet-class>servlet.CheckInPatientU</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckInPatientU</servlet-name>
+    <url-pattern>/views/CheckInPatientU</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateInPatient</display-name>
+    <servlet-name>UpdateInPatient</servlet-name>
+    <servlet-class>servlet.UpdateInPatient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateInPatient</servlet-name>
+    <url-pattern>/views/UpdateInPatient</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>BookAppointment</display-name>
+    <servlet-name>BookAppointment</servlet-name>
+    <servlet-class>servlet.BookAppointment</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookAppointment</servlet-name>
+    <url-pattern>/views/BookAppointment</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateAppointment</display-name>
+    <servlet-name>UpdateAppointment</servlet-name>
+    <servlet-class>servlet.UpdateAppointment</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateAppointment</servlet-name>
+    <url-pattern>/views/UpdateAppointment</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeletePatientServlet</display-name>
+    <servlet-name>DeletePatientServlet</servlet-name>
+    <servlet-class>servlet.DeletePatientServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeletePatientServlet</servlet-name>
+    <url-pattern>/views/DeletePatientServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddReport</display-name>
+    <servlet-name>AddReport</servlet-name>
+    <servlet-class>servlet.AddReport</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddReport</servlet-name>
+    <url-pattern>/views/AddReport</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateReport</display-name>
+    <servlet-name>UpdateReport</servlet-name>
+    <servlet-class>servlet.UpdateReport</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateReport</servlet-name>
+    <url-pattern>/views/UpdateReport</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddSurgeon</display-name>
+    <servlet-name>AddSurgeon</servlet-name>
+    <servlet-class>servlet.AddSurgeon</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddSurgeon</servlet-name>
+    <url-pattern>/views/AddSurgeon</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddSysAdmin</display-name>
+    <servlet-name>AddSysAdmin</servlet-name>
+    <servlet-class>servlet.AddSysAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddSysAdmin</servlet-name>
+    <url-pattern>/views/AddSysAdmin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddCard</display-name>
+    <servlet-name>AddCard</servlet-name>
+    <servlet-class>servlet.AddCard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddCard</servlet-name>
+    <url-pattern>/views/AddCard</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateCard</display-name>
+    <servlet-name>UpdateCard</servlet-name>
+    <servlet-class>servlet.UpdateCard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateCard</servlet-name>
+    <url-pattern>/views/UpdateCard</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteCard</display-name>
+    <servlet-name>DeleteCard</servlet-name>
+    <servlet-class>servlet.DeleteCard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteCard</servlet-name>
+    <url-pattern>/views/DeleteCard</url-pattern>
   </servlet-mapping>
 </web-app>

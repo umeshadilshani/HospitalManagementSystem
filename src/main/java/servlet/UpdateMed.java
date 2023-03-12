@@ -1,3 +1,6 @@
+/**
+ * Silva T.U.D
+ */
 package servlet;
 
 import java.io.IOException;
@@ -33,6 +36,5 @@ public class UpdateMed extends HttpServlet {
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("updateStock.jsp");
 		dispatcher.forward(request, response);
-}
-
+	}
 }

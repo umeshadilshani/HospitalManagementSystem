@@ -1,3 +1,6 @@
+/**
+ * Silva T.U.D
+ */
 package servlet;
 
 import java.io.IOException;
@@ -31,15 +34,9 @@ public class UpdateEmp extends HttpServlet {
 		EmployeeServiceImpl empService = new EmployeeServiceImpl();
 		int update = empService.updateEmp(emp);
 		
-		String updateEmp = null;
+		request.setAttribute("update", update);
 		
-		if(update == 1) {
-			updateEmp = "1";
-		}
-		
-		request.setAttribute("update", updateEmp);
-		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("adminHomePage.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("updateStaff.jsp");
 		dispatcher.forward(request, response);
 		}
 }

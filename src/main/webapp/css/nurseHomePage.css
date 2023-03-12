@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.inPatientForm{
+	width: 96%;
+	margin: 0 auto;
+	border-radius: 10px;
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../images/inPatientFormBack.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}

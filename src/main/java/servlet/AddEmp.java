@@ -1,3 +1,7 @@
+/**
+ * @author Silva T.U.D
+ */
+
 package servlet;
 
 import java.io.IOException;
@@ -34,12 +38,11 @@ public class AddEmp extends HttpServlet {
 		
 		EmployeeServiceImpl empServiceImpl = new EmployeeServiceImpl();
 		
-//	    System.out.println(employeeServiceImpl.checkEmployeeID(employee));
 		String count = empServiceImpl.addEmp(emp);
 		
 		request.setAttribute("count", count);
 		
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("adminHomePage.jsp");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("addStaff.jsp");
 		requestDispatcher.forward(request, response);
 	}
 }

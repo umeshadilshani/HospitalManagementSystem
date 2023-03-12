@@ -1,3 +1,4 @@
+<!-- Silva T.U.D -->
 <%@page import="model.Stock"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="service.StockServiceImpl"%>
@@ -46,7 +47,7 @@
 		</div>
 	</nav>
 
-
+	<!-- Status of the adding new stocks -->
 	<%
 	String msg = (String) request.getAttribute("msg");
 	if (msg == null) {
@@ -141,6 +142,8 @@
 			</div>
 		</div>
 	</div>
+	
+	<!-- Notification related to the removing of stock -->
 	<%
 	String rmsg = (String) request.getAttribute("rmsg");
 	if (rmsg == null) {
@@ -270,14 +273,10 @@
 
 
 
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script
-		src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-	<script
-		src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 	<script src="../js/stock.js"></script>
 </body>
 </html>

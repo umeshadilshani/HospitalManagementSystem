@@ -1,3 +1,6 @@
+/**
+ * Silva T.U.D
+ */
 package servlet;
 
 import java.io.IOException;
@@ -32,7 +35,7 @@ public class CheckMed extends HttpServlet {
 		request.setAttribute("s_quantity", newStock.getS_quantity());
 		request.setAttribute("s_price", newStock.getS_price());
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("stock.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("pharmacistHomePage.jsp");
 		dispatcher.forward(request, response);
 	}
 

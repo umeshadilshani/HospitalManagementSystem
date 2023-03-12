@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+
+/* Footer */
+footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/footer.jpg);
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.footer-top {
+    margin-bottom: 30px;
+}
+
+footer p,
+footer a{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+footer .social-links a {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+footer img {
+    max-width: 175px;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}

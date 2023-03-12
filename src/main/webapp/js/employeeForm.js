@@ -1,3 +1,7 @@
+// Silva T.U.D
+
+
+// Validation of the profile picture
 $(document).ready(function($) {            
 	$("#imageUpload").validate({
 		rules: {
@@ -18,8 +22,9 @@ $(document).ready(function($) {
 	});
 });
 
-$(document).ready(function($) {            
-	
+
+// Validation of the update profile form
+$(document).ready(function($) {       
 	$("#updateProfile").validate({
 		rules: {
 			id:{
@@ -74,6 +79,8 @@ $(document).ready(function($) {
 	
 });
 
+
+// Validation of the add employee form
 $(document).ready(function($) {
 	$.validator.addMethod("email", function(value, element) {
                 return this.optional(element) || /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,15}$/i.test(value);
@@ -142,6 +149,8 @@ $(document).ready(function($) {
 	});
 });
 
+
+// Validation of the check employee form
 $(document).ready(function($) {            
 	$("#checkEmp").validate({
 		rules: {
@@ -195,6 +204,8 @@ $(document).ready(function($) {
 	});
 });
 
+
+// Validation of the update employee form
 $(document).ready(function($) {             
 	$("#updateEmp").validate({
 		rules: {
@@ -242,5 +253,60 @@ $(document).ready(function($) {
 	});
 	$.validator.addMethod("emailChk", function(s) {
    		return /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,15}$/i.test(s) 
+	});
+});
+
+
+// Validation of the check employee form
+$(document).ready(function($) {            
+	$("#checkEmp").validate({
+		rules: {
+			id: {
+				required: true,
+      			number: 3,
+			},
+			
+			email: {
+      			required: true,
+   			 },
+   			 
+   			 address: {
+				required: true,
+      			minlength: 5,
+			 },
+   			 
+   			 contact:{
+				required: true,
+      			number: true,
+      			minlength: 10,
+      			maxlength: 10,
+      			pattern: /^[0][0-9]{9}$/
+			 },
+			 
+		},
+		
+		messages: {
+			id: {
+				required: "Please enter employer ID",  
+				number: "Enter a valid Employer ID"
+			},                 
+                    
+    		email: {
+      			required: "Please enter your email",
+   			 },
+   			 
+   			 address: {
+				required: "Please enter your address",  
+				minlength: jQuery.validator.format("Atleast {0} characters required!"),
+			 },
+   			 
+   			 contact: {
+      			required: "Please enter your contact number",
+      			number: "Please enter a valid contact number",
+      			minlength: jQuery.validator.format("Atleast {0} characters in the format of 0771111111 required!"),
+      			maxlength: jQuery.validator.format("Atmost {0} characters in the format of 0771111111 required!"),
+      			pattern: 'Please enter a valid contact number'
+   			 },   
+		},
 	});
 });

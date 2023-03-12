@@ -1,3 +1,6 @@
+/**
+ * Silva T.U.D
+ */
 package servlet;
 
 import java.io.IOException;
@@ -11,6 +14,9 @@ import jakarta.servlet.http.HttpSession;
 import model.Employee;
 import service.EmployeeServiceImpl;
 
+/**
+ * Servlet implementation class Login
+ */
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -44,7 +50,7 @@ public class Login extends HttpServlet {
 			session.setAttribute("profilepic", newEmp.getProfilepic());
 			String designation = newEmp.getDesignation();
 			
-			if(designation.equals("admin")) {
+			if(designation.equals("System Admin")) {
 				RequestDispatcher requestDispatcher = request.getRequestDispatcher("adminHomePage.jsp");
 				requestDispatcher.forward(request, response);
 			}

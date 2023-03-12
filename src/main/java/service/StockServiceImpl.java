@@ -1,3 +1,7 @@
+/**
+ * @author Silva T.U.D
+ */
+
 package service;
 
 import java.sql.Connection;
@@ -11,6 +15,9 @@ import model.Stock;
 import util.DBConnection;
 
 public class StockServiceImpl implements StockService{
+	/**
+	 * Add stock details
+	 */
 	public String addStock(Stock stock) {
 		String msg = "Try Again";
 		
@@ -50,6 +57,10 @@ public class StockServiceImpl implements StockService{
 		return msg;
 	}
 
+	
+	/**
+	 * Retreive all stock details
+	 */
 	public ArrayList<Stock> getAllStock(){
 		DBConnection db = new DBConnection();
 		Connection con = db.getConnection();
@@ -71,13 +82,15 @@ public class StockServiceImpl implements StockService{
 				stockList.add(stock);
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 		return stockList;
 	}
 	
+	
+	/**
+	 * Get stock details of a specific product
+	 */
 	public Stock checkMedID(Stock stock){
 		Stock chkStock = new Stock();
 		DBConnection db = new DBConnection();
@@ -96,7 +109,6 @@ public class StockServiceImpl implements StockService{
 				chkStock.setS_price(rs.getDouble(4));
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -104,6 +116,9 @@ public class StockServiceImpl implements StockService{
 	}
 
 	
+	/**
+	 * Remove stock details
+	 */
 	public String removeStock(Stock stock) {
 		String rmsg = "Try Again";
 		DBConnection db = new DBConnection();
@@ -125,13 +140,16 @@ public class StockServiceImpl implements StockService{
 				}
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
 		return rmsg;
 	}
 	
+	
+	/**
+	 * Update stock details
+	 */
 	public int updateMed(Stock stock) {
 		int check = 0;
 

@@ -1,3 +1,6 @@
+/**
+ * Silva T.U.D
+ */
 package servlet;
 
 import java.io.IOException;
@@ -49,6 +52,18 @@ public class UpdateProfile extends HttpServlet {
 			}
 			else if(designation.equals("pharmacist")) {
 				RequestDispatcher dispatcher = request.getRequestDispatcher("pharmacistHomePage.jsp");
+				dispatcher.forward(request, response);
+			}
+			else if(designation.equals("doctor")) {
+				RequestDispatcher dispatcher = request.getRequestDispatcher("doctorHomePage.jsp");
+				dispatcher.forward(request, response);
+			}
+			else if(designation.equals("labassisstant")) {
+				RequestDispatcher dispatcher = request.getRequestDispatcher("labAssisstantHomePage.jsp");
+				dispatcher.forward(request, response);
+			}
+			else if(designation.equals("receptionist")) {
+				RequestDispatcher dispatcher = request.getRequestDispatcher("receptionistHomePage.jsp");
 				dispatcher.forward(request, response);
 			}
 		}

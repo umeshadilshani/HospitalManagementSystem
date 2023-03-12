@@ -1,3 +1,6 @@
+/**
+ * Silva T.U.D
+ */
 package servlet;
 
 import java.io.IOException;
@@ -35,7 +38,7 @@ public class CheckEmp extends HttpServlet {
 		request.setAttribute("contact", getEmp.getPhone());
 		request.setAttribute("address", getEmp.getAddress());
 				
-		RequestDispatcher dispatcher =  request.getRequestDispatcher("adminHomePage.jsp");
+		RequestDispatcher dispatcher =  request.getRequestDispatcher("updateStaff.jsp");
 		dispatcher.forward(request, response);
 	}
 }

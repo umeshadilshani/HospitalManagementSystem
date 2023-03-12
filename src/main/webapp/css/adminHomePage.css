@@ -89,3 +89,14 @@ img {
     align-content: center;
     text-align: center;
 }
+
+.about .divider {
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: #F58d17;
+}
+
+.about{
+	margin-bottom: 70px;
+}

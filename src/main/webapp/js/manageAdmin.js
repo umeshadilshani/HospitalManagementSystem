@@ -1,3 +1,7 @@
+// Silva T.U.D
+
+
+// Validation of the add form
 $(document).ready(function($) {
 	$.validator.addMethod("email", function(value, element) {
                 return this.optional(element) || /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,15}$/i.test(value);

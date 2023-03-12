@@ -1,3 +1,6 @@
+/**
+ * Silva T.U.D
+ */
 package servlet;
 
 import java.io.IOException;
@@ -27,7 +30,7 @@ public class AddStock extends HttpServlet {
 		
 		request.setAttribute("msg", msg);
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("stock.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("pharmacistHomePage.jsp");
 		dispatcher.forward(request, response);
 	}
 

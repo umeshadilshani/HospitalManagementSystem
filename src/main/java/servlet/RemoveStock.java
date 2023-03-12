@@ -1,3 +1,6 @@
+/**
+ * Silva T.U.D
+ */
 package servlet;
 
 import java.io.IOException;
@@ -16,9 +19,6 @@ import service.StockServiceImpl;
 public class RemoveStock extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int s_id = Integer.parseInt(request.getParameter("s_id"));
 		
@@ -31,7 +31,7 @@ public class RemoveStock extends HttpServlet {
 		
 		request.setAttribute("rmsg", rmsg);
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("stock.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("pharmacistHomePage.jsp");
 		dispatcher.forward(request, response);
 	}
 

@@ -1,3 +1,6 @@
+/**
+ * Silva T.U.D
+ */
 package servlet;
 
 import java.io.IOException;
@@ -11,6 +14,9 @@ import model.Employee;
 import service.EmployeeServiceImpl;
 
 
+/**
+ * Servlet implementation class SignUp
+ */
 public class SignUp extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

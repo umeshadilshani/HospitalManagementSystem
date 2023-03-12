@@ -1,6 +1,15 @@
+/**
+ * @author Silva T.U.D
+ */
+
 package model;
 
+/**
+ * Store properties and methods related to the employee class
+ */
+
 public class Employee {
+	//Properties of the employee class
 	private int id;
 	private String name;
 	private String designation;
@@ -13,6 +22,7 @@ public class Employee {
 	private String profilepic;
 	
 	
+	//Constructors of the employee class
 	public Employee() {
 		super();
 	}
@@ -45,6 +55,7 @@ public class Employee {
 		this.password = password;
 	}
 
+	//Getters and setters of the employee class
 	public int getId() {
 		return id;
 	}

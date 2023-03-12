@@ -1,7 +1,12 @@
+/**
+ * @author Silva T.U.D
+ */
+
 package service;
 
 import model.Stock;
 
+// Method definitions related to the stock services class
 public interface StockService {
 	public String addStock(Stock stock);
 	

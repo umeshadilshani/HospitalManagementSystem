@@ -1,3 +1,6 @@
+/**
+ * Silva T.U.D
+ */
 package servlet;
 
 import java.io.FileOutputStream;
@@ -28,7 +31,7 @@ public class AddImage extends HttpServlet {
 		int id = (int)session.getAttribute("id");
 		String designation = (String) session.getAttribute("designation");
 		
-		System.out.println(id);
+
 		/* System.out.println("In do post method of Add Image servlet."); */
 		Part file=request.getPart("image");
 		
@@ -73,12 +76,16 @@ public class AddImage extends HttpServlet {
 			
 			session.setAttribute("profilepic", imageFileName);
 			
-			if(designation.equals("admin")) {
+			if(designation.equals("System Admin")) {
 				RequestDispatcher dispatcher = request.getRequestDispatcher("adminHomePage.jsp");
 				dispatcher.forward(request, response);
 			}
 			else if(designation.equals("pharmacist")) {
 				RequestDispatcher dispatcher = request.getRequestDispatcher("pharmacistHomePage.jsp");
+				dispatcher.forward(request, response);
+			}
+			else if(designation.equals("nurse")) {
+				RequestDispatcher dispatcher = request.getRequestDispatcher("nurseHomePage.jsp");
 				dispatcher.forward(request, response);
 			}
 		}

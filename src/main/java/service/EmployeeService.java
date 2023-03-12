@@ -1,7 +1,13 @@
+/**
+ * @author Silva T.U.D
+ */
+
 package service;
 
 import model.Employee;
+import model.Surgeon;
 
+// Method definitions related to the employee services class
 public interface EmployeeService {
 	public String check(Employee emp);
 	
@@ -14,4 +20,8 @@ public interface EmployeeService {
 	public Employee checkEmp(Employee emp);
 	
 	public int updateEmp(Employee emp);
+	
+	public String removeEmp(Employee emp);
+	
+	public String addSurgeon(Surgeon sur);
 }

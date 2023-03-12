@@ -1,3 +1,4 @@
+<!-- Silva T.U.D -->
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
@@ -26,7 +27,7 @@
 						<a class="nav-link" href="/HospitalManagementSystem/">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Appointment</a>
+						<a class="nav-link" href="views/appointment.jsp">Appointment</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Lab Networks</a>
@@ -35,10 +36,10 @@
 						<a class="nav-link" href="#">Pharmacy</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
+						<a class="nav-link" href="#about">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact Us</a>
+						<a class="nav-link" href="views/contact.jsp">Contact Us</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link d-lg-none" href="views/login.jsp">Login</a>
